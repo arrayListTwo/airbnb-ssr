@@ -16,11 +16,19 @@ const router = useRouter()
   </div>
   <HelloWorld msg="Vite + Vue"/>
   <div class="flex justify-center items-center">
-    <div class="flex-1 bg-orange-200 mx-2 rounded text-cyan-300 hover:cursor-pointer hover:bg-cyan-300 hover:text-orange-200" @click="() => router.push({path: '/home'})">首页</div> |
-    <div class="flex-1 bg-orange-200 mx-2 rounded text-cyan-300 hover:cursor-pointer hover:bg-cyan-300 hover:text-orange-200" @click="() => router.push({path: '/mine'})">个人中心</div>
+    <div
+        class="flex-1 bg-orange-200 mx-2 rounded text-cyan-300 hover:cursor-pointer hover:bg-cyan-300 hover:text-orange-200"
+        @click="() => router.push({path: '/home'})">首页
+    </div>
+    |
+    <div
+        class="flex-1 bg-orange-200 mx-2 rounded text-cyan-300 hover:cursor-pointer hover:bg-cyan-300 hover:text-orange-200"
+        @click="() => router.push({path: '/mine'})">个人中心
+    </div>
   </div>
   <div class="flex justify-center items-center">
-    <router-link class="flex-1 text-cyan-300" to="/home">home</router-link> |
+    <router-link class="flex-1 text-cyan-300" to="/home">home</router-link>
+    |
     <router-link class="flex-1 text-cyan-300" to="/mine">mine</router-link>
   </div>
   <router-view></router-view>
