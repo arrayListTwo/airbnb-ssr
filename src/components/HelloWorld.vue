@@ -29,10 +29,13 @@ const count = ref(0)
     in your IDE for a better DX
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <div class="text">Click on the Vite and Vue logos to learn more</div>
 </template>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
+<style lang="scss" scoped>
+@import "@/assets/scss/home/index.scss";
+.text {
+  @include line-text-overflow;
+  width: 200px;
 }
 </style>

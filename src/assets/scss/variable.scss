@@ -1,0 +1,6 @@
+$red: rgba(10, 227, 178, 0.45);
+@mixin line-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
