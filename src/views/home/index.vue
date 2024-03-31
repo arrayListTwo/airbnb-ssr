@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {useRouter, useRoute} from "vue-router";
-import {getCurrentInstance} from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { getCurrentInstance } from 'vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -11,7 +11,7 @@ const { proxy }: any = getCurrentInstance()
 proxy.$message({
   message: 'Congrats, this is a success message.',
   type: 'success',
-  plain: true,
+  plain: true
 })
 </script>
 
