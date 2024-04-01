@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRouter, useRoute } from 'vue-router'
 import { getCurrentInstance } from 'vue'
+import { http } from '@/utils/http.ts'
 
 const router = useRouter()
 const route = useRoute()
@@ -13,6 +14,7 @@ proxy.$message({
   type: 'success',
   plain: true
 })
+http.httpRequestGet('/api', {})
 </script>
 
 <template>
